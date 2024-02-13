@@ -53,7 +53,7 @@ logo.Position = UDim2.new(0.5, 0, 0, 35)
 logo.AnchorPoint = Vector2.new(0.5, 0)
 logo.Image = "http://www.roblox.com/asset/?id=15860672267"
 
-local closeButton = Instance.new("MasukanKey")
+local closeButton = Instance.new("TextButton")
 closeButton.Name = "CloseButton"
 closeButton.Parent = frame
 closeButton.Size = UDim2.new(0, 25, 0, 25)
