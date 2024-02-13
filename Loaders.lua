@@ -5,7 +5,7 @@ local validKeys = {
 
 
 local thescript = [[
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelokbr/Dr.peste/main/mains"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelokbr/Dr.peste/main/sukunav13"))()
 ]]
 
 local gui = Instance.new("ScreenGui")
@@ -34,7 +34,7 @@ background.Name = "Background"
 background.Parent = frame
 background.BackgroundTransparency = 1
 background.Size = UDim2.new(1, 0, 1, 0)
-background.Image = "http://www.roblox.com/asset/?id=16102119639"
+background.Image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRILxgnRQyLByD_gGYzOuA112f0RCvG9Urtug&usqp=CAU"
 
 local title = Instance.new("TextLabel")
 title.Name = "Title"
