@@ -3,8 +3,6 @@ local validKeys = {
     ["notvalid"] = false
 }
 
-local discordLink = 'https://discord.gg/KAjqmrqSC6'
-local uniqueKey = game:HttpGet'https://pastebin.com/raw/1MVgiU4L';
 
 local thescript = [[
     loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelokbr/Dr.peste/main/mains"))()
@@ -111,17 +109,16 @@ local function createButton(name, position, text)
     return button
 end
 
-local getKeyButton = createButton("GetKeyButton", UDim2.new(0, 0, 0, 0), "Link Key")
-local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Enter Script")
-local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.7, 0, 0, 0), "Buy KeyPrivate")
+local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Masuk Ke Script")
+--local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.7, 0, 0, 0), "Buy KeyPrivate")
 
-getKeyButton.MouseButton1Click:Connect(function()
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "vall Hub",
-        Text = "URL Get Private Key Berhasil Di Salin",
-        Duration = 4
-    })
-end)
+--getKeyButton.MouseButton1Click:Connect(function()
+--    game.StarterGui:SetCore("SendNotification", {
+--        Title = "vall Hub",
+--        Text = "URL Get Private Key Berhasil Di Salin",
+ --       Duration = 4
+--    })
+--end)
 
 loginButton.MouseButton1Click:Connect(function()
     local enteredKey = keyTextBox.Text
@@ -130,24 +127,30 @@ loginButton.MouseButton1Click:Connect(function()
     if validKeys[enteredKey] then
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
-            Text = "Kunci Valid, Script Dimulai...",
-            Duration = 4
+            Text = "Key Valid...",
+            Duration = 6
         })
+      
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "vall Hub",
+            Text = "Selamat Datang Cuy!",
+            Duration = 6
+})
         loadstring(thescript)()  -- Menjalankan skrip jika kunci valid
         gui:Destroy()  -- Menghapus GUI setelah menjalankan skrip
     else
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
-            Text = "Kunci Salah, Coba Lagi!",
-            Duration = 4
+            Text = "Mampus Key Salah Kontol!!!!!!",
+            Duration = 8
         })
     end
 end)
 
-buyKeyButton.MouseButton1Click:Connect(function()
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "vall Hub",
-        Text = "Gada Private Key Gak Di jual!!",
-        Duration = 4
-    })
-end)
+--buyKeyButton.MouseButton1Click:Connect(function()
+--    game.StarterGui:SetCore("SendNotification", {
+--        Title = "vall Hub",
+--        Text = "Gada Private Key Gak Di jual!!",
+--        Duration = 4
+--    })
+--end)
