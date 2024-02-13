@@ -1,3 +1,8 @@
+local validKeys = {
+    ["valid"] = true,
+    ["notvalid"] = false
+}
+
 local discordLink = 'https://discord.gg/KAjqmrqSC6'
 local uniqueKey = game:HttpGet'https://pastebin.com/raw/1MVgiU4L';
 
@@ -121,18 +126,19 @@ end)
 loginButton.MouseButton1Click:Connect(function()
     local enteredKey = keyTextBox.Text
 
-    if enteredKey == uniqueKey then
+    -- Memeriksa apakah kunci yang dimasukkan terdapat dalam daftar kunci yang valid
+    if validKeys[enteredKey] then
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
-            Text = "Key Valid OTW Ke Script...",
+            Text = "Kunci Valid, Script Dimulai...",
             Duration = 4
         })
-        loadstring(thescript)()
-        gui:Destroy()
+        loadstring(thescript)()  -- Menjalankan skrip jika kunci valid
+        gui:Destroy()  -- Menghapus GUI setelah menjalankan skrip
     else
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
-            Text = "Key Salah Tolol!!",
+            Text = "Kunci Salah, Coba Lagi!",
             Duration = 4
         })
     end
