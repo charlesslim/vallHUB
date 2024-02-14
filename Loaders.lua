@@ -5,7 +5,7 @@ local validKeys = {
 
 
 local thescript = [[
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelokbr/Dr.peste/main/sukunav13"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/charlesslim/vallHUB/main/vallh.lua"))()
 ]]
 
 local gui = Instance.new("ScreenGui")
