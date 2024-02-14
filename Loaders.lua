@@ -46,7 +46,7 @@ title.Font = Enum.Font.Ubuntu
 title.Text = "vallHub"
 title.TextSize = 24
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.FontWeight = Enum.FontWeight.Bold
+title.TextScaled = true
 
 local logo = Instance.new("ImageLabel")
 logo.Name = "Logo"
