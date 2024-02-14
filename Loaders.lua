@@ -54,7 +54,7 @@ logo.BackgroundTransparency = 1
 logo.Size = UDim2.new(0.5, 0, 0.5, 0)
 logo.Position = UDim2.new(0.5, 0, 0, 35)
 logo.AnchorPoint = Vector2.new(0.5, 0)
-logo.Image = "http://www.roblox.com/asset/?id=15860672267"
+logo.Image = "http://www.roblox.com/asset/?id=16365631306"
 
 local closeButton = Instance.new("TextButton")
 closeButton.Name = "CloseButton"
