@@ -34,7 +34,7 @@ background.Name = "Background"
 background.Parent = frame
 background.BackgroundTransparency = 1
 background.Size = UDim2.new(1, 0, 1, 0)
-background.Image = "http://roblox.com/asset/?id=16356187738"
+background.Image = "https://www.roblox.com/library/16357553635"
 
 local title = Instance.new("TextLabel")
 title.Name = "Title"
