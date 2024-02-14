@@ -4,9 +4,9 @@ local validKeys = {
 }
 
 
---local thescript = [[
---    loadstring(game:HttpGet("https://raw.githubusercontent.com/charlesslim/vallHUB/main/vallh.lua"))()
---]]
+local thescript = [[
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/charlesslim/vallHUB/main/vallh.lua"))()
+]]
 
 local gui = Instance.new("ScreenGui")
 gui.Name = "AlphaHubGUI"
@@ -130,15 +130,15 @@ loginButton.MouseButton1Click:Connect(function()
             Title = "vall Hub",
             Text = "Key Valid...",
             Duration = 6
-        })
-      
+         })
+                
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
             Text = "Selamat Datang Cuy!",
             Duration = 6
 })
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/charlesslim/vallHUB/main/vallh.lua")()  -- Menjalankan skrip jika kunci valid
-        gui:Destroy()  -- Menghapus GUI setelah menjalankan skrip
+        loadstring(thescript)()
+        gui:Destroy()
     else
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
