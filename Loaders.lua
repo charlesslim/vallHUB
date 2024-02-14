@@ -34,7 +34,7 @@ background.Name = "Background"
 background.Parent = frame
 background.BackgroundTransparency = 1
 background.Size = UDim2.new(1, 0, 1, 0)
-background.Image = "https://www.roblox.com/asset/?id=15860672267"
+background.Image = "http://www.roblox.com/asset/?id=15860672267"
 
 local title = Instance.new("TextLabel")
 title.Name = "Title"
@@ -54,7 +54,7 @@ logo.BackgroundTransparency = 1
 logo.Size = UDim2.new(0.5, 0, 0.5, 0)
 logo.Position = UDim2.new(0.5, 0, 0, 35)
 logo.AnchorPoint = Vector2.new(0.5, 0)
-logo.Image = "http://www.roblox.com/asset/?id=15860672267"
+logo.Image = "http://www.roblox.com/asset/?id=158606722671"
 
 local closeButton = Instance.new("TextButton")
 closeButton.Name = "CloseButton"
