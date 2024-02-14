@@ -43,9 +43,10 @@ title.BackgroundTransparency = 1
 title.Size = UDim2.new(1, 0, 0, 30)
 title.Position = UDim2.new(0, 0, 0, 10)
 title.Font = Enum.Font.Ubuntu
-title.Text = "vall Hub Private"
+title.Text = "vallHub"
 title.TextSize = 24
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.FontWeight = Enum.FontWeight.Bold
 
 local logo = Instance.new("ImageLabel")
 logo.Name = "Logo"
@@ -73,13 +74,13 @@ closeButton.MouseButton1Click:Connect(function()
     gui:Destroy()
 end)
 
-local keyTextBox = Instance.new("TextBox")
+local keyTextBox = Instance.new("Input Key Here")
 keyTextBox.Name = "KeyTextBox"
 keyTextBox.Parent = frame
 keyTextBox.Size = UDim2.new(0.7, 0, 0, 30)
 keyTextBox.Position = UDim2.new(0.5, -keyTextBox.Size.X.Offset / 2, 0.95, -35)
 keyTextBox.AnchorPoint = Vector2.new(0.5, 1)
-keyTextBox.PlaceholderText = "Enter Private Key"
+keyTextBox.PlaceholderText = "Input Your Key"
 keyTextBox.Font = Enum.Font.Ubuntu
 keyTextBox.TextSize = 18
 keyTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -109,7 +110,7 @@ local function createButton(name, position, text)
     return button
 end
 
-local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Masuk Ke Script")
+local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Confirm Key")
 --local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.7, 0, 0, 0), "Buy KeyPrivate")
 
 --getKeyButton.MouseButton1Click:Connect(function()
