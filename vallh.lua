@@ -116,7 +116,7 @@ function Notif.New(text, timee)
     uicorner_2.Parent = text_button
 
     local image_button = Instance.new("ImageButton")
-    image_button.Image = "rbxassetid://15860672267"
+    image_button.Image = "rbxassetid://16374596256"
     image_button.ImageColor3 = Color3.new(0.784314, 0.784314, 0.784314)
     image_button.ImageRectOffset = Vector2.new(924, 724)
     image_button.ImageRectSize = Vector2.new(36, 36)
@@ -190,7 +190,7 @@ ImageButton1.BorderSizePixel = 0
 ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton1.Size = UDim2.new(0, 70, 0, 70)
 ImageButton1.Draggable = true
-ImageButton1.Image = "http://www.roblox.com/asset/?id=15860672267"
+ImageButton1.Image = "http://www.roblox.com/asset/?id=16374596256"
 ImageButton1.MouseButton1Down:connect(function()
   game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
   game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
@@ -361,7 +361,7 @@ function Update:Window(text,logo,keybind)
     Ping.Position = UDim2.new(0.28, 0,0.074, 0)
     Ping.Size = UDim2.new(0, 225, 0, 25)
     Ping.Font = Enum.Font.GothamSemibold
-    Ping.Text = "             | SUKUNA HUB |                  "
+    Ping.Text = "             | VALL HUB |                  "
     Ping.TextColor3 = Color3.fromRGB(255,255,255)
     Ping.TextSize = 14.000
     Ping.TextXAlignment = Enum.TextXAlignment.Left
@@ -415,7 +415,7 @@ function Update:Window(text,logo,keybind)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, -5, 0, -5)
 	Logo.Size = UDim2.new(0, 135, 0, 135)
-	Logo.Image = "rbxassetid://15860672267"
+	Logo.Image = "rbxassetid://16374596256"
     local Tab = Instance.new("Frame")
     Tab.Name = "Tab"
     Tab.Parent = Main
@@ -470,7 +470,7 @@ Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Page.BackgroundTransparency = 1.10
 Page.Position = UDim2.new(0.265426834, 0, 0.075000003, 0)
 Page.Size = UDim2.new(0, 400, 0, 400)
-Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16374670979)
+Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
 
     local MainPage = Instance.new("Frame")
     MainPage.Name = "MainPage"
@@ -826,7 +826,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16374670979)
         ImageButton.BorderSizePixel = 0
         ImageButton.Position = UDim2.new(0, 350, 0, 6)
         ImageButton.Size = UDim2.new(0, 20, 0, 20)
-        ImageButton.Image = "rbxassetid://16374596289"
+        ImageButton.Image = "rbxassetid://15860672267"
         ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         UICorner_2.CornerRadius = UDim.new(0, 5)
@@ -936,7 +936,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16374670979)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 5, 0, 6)
         ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-        ImageLabel.Image = "rbxassetid://16374596289"
+        ImageLabel.Image = "rbxassetid://15860672267"
         ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         Space.Name = "Space"
@@ -1290,7 +1290,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16374670979)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
         ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-        ImageLabel.Image = "rbxassetid://16374596289"
+        ImageLabel.Image = "rbxassetid://15860672267"
             
         Title.Parent = SliderFrame_2
         Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
@@ -12728,7 +12728,8 @@ end)
         "Control-Control",
         "Soul-Soul",
         "Dragon-Dragon",
-        "Leopard-Leopard"
+        "Leopard-Leopard",
+        "Kitsune-Kitsune"
     }
     
     local Remote_GetFruits = game.ReplicatedStorage:FindFirstChild("Remotes").CommF_:InvokeServer("GetFruits");
@@ -13083,7 +13084,7 @@ end)
     end
     end)
     
-        D:AddToggle("Bring All Fruit 75% Kick System",_G.BringFruitBF,function(value)
+        D:AddToggle("Bring All Fruit 85% Kick System",_G.BringFruitBF,function(value)
         _G.BringFruitBF = value
     end)
     
@@ -13887,7 +13888,7 @@ end)
 		end
 	end)
     
-    Misc:AddButton("Unlock FPS",function()
+    Misc:AddButton("Max FPS",function()
         setfpscap(9999999)
     end)
     
