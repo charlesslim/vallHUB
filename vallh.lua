@@ -470,7 +470,7 @@ Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Page.BackgroundTransparency = 1.10
 Page.Position = UDim2.new(0.265426834, 0, 0.075000003, 0)
 Page.Size = UDim2.new(0, 400, 0, 400)
-Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
+Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16374670979)
 
     local MainPage = Instance.new("Frame")
     MainPage.Name = "MainPage"
@@ -826,7 +826,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         ImageButton.BorderSizePixel = 0
         ImageButton.Position = UDim2.new(0, 350, 0, 6)
         ImageButton.Size = UDim2.new(0, 20, 0, 20)
-        ImageButton.Image = "rbxassetid://15860672267"
+        ImageButton.Image = "rbxassetid://16374596289"
         ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         UICorner_2.CornerRadius = UDim.new(0, 5)
@@ -936,7 +936,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 5, 0, 6)
         ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-        ImageLabel.Image = "rbxassetid://15860672267"
+        ImageLabel.Image = "rbxassetid://16374596289"
         ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         Space.Name = "Space"
@@ -1290,7 +1290,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
         ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-        ImageLabel.Image = "rbxassetid://15860672267"
+        ImageLabel.Image = "rbxassetid://16374596289"
             
         Title.Parent = SliderFrame_2
         Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
