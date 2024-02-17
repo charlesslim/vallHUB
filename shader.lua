@@ -5,7 +5,7 @@ end
 local Bloom = Instance.new("BloomEffect")
 Bloom.Intensity = 0.1
 Bloom.Threshold = 0
-Bloom.Size = 50
+Bloom.Size = 40
 Bloom.Parent = game:GetService("Lighting")
 
 local Tropic = Instance.new("Sky")
@@ -30,7 +30,7 @@ Sky.SkyboxRt = "http://www.roblox.com/asset/?id=196263721"
 Sky.Parent = Bloom
 
 local Blur = Instance.new("BlurEffect")
-Blur.Size = 2
+Blur.Size = 1
 Blur.Parent = game:GetService("Lighting")
 
 local Inaritaisha = Instance.new("ColorCorrectionEffect")
@@ -40,7 +40,7 @@ Inaritaisha.TintColor = Color3.fromRGB(255, 224, 219)
 Inaritaisha.Parent = game:GetService("Lighting")
 
 local SunRays = Instance.new("SunRaysEffect")
-SunRays.Intensity = 0.05
+SunRays.Intensity = 0.01
 SunRays.Parent = game:GetService("Lighting")
 
 local Sunset = Instance.new("Sky")
@@ -50,7 +50,7 @@ Sunset.SkyboxLf = "rbxassetid://323494252"
 Sunset.SkyboxBk = "rbxassetid://323494035"
 Sunset.SkyboxFt = "rbxassetid://323494130"
 Sunset.SkyboxDn = "rbxassetid://323494368"
-Sunset.SunAngularSize = 10 -- Mengurangi ukuran matahari untuk mengurangi kecerahan
+Sunset.SunAngularSize = 0 -- Mengurangi ukuran matahari untuk mengurangi kecerahan
 Sunset.SkyboxRt = "rbxassetid://323494067"
 Sunset.Parent = game:GetService("Lighting")
 
