@@ -190,7 +190,7 @@ ImageButton1.BorderSizePixel = 0
 ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton1.Size = UDim2.new(0, 70, 0, 70)
 ImageButton1.Draggable = true
-ImageButton1.Image = "http://www.roblox.com/asset/?id=16374596256"
+ImageButton1.Image = "http://www.roblox.com/asset/?id=16436649609"
 ImageButton1.MouseButton1Down:connect(function()
   game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
   game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
@@ -314,7 +314,7 @@ function Update:Window(text,logo,keybind)
     BtnStroke.Name = "BtnStroke"
     BtnStroke.Parent = Main
     BtnStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-    BtnStroke.Color = Color3.fromRGB(255, 0, 0)
+    BtnStroke.Color = Color3.fromRGB(135, 206, 250)
     BtnStroke.LineJoinMode = Enum.LineJoinMode.Round
     BtnStroke.Thickness = 1
     BtnStroke.Transparency = 0
@@ -361,7 +361,7 @@ function Update:Window(text,logo,keybind)
     Ping.Position = UDim2.new(0.28, 0,0.074, 0)
     Ping.Size = UDim2.new(0, 225, 0, 25)
     Ping.Font = Enum.Font.GothamSemibold
-    Ping.Text = "             | VALL HUB |                  "
+    Ping.Text = "             | >VALL HUB< |                  "
     Ping.TextColor3 = Color3.fromRGB(255,255,255)
     Ping.TextSize = 14.000
     Ping.TextXAlignment = Enum.TextXAlignment.Left
@@ -415,7 +415,7 @@ function Update:Window(text,logo,keybind)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, -5, 0, -5)
 	Logo.Size = UDim2.new(0, 135, 0, 135)
-	Logo.Image = "rbxassetid://16374596256"
+	Logo.Image = "rbxassetid://16436649609"
     local Tab = Instance.new("Frame")
     Tab.Name = "Tab"
     Tab.Parent = Main
@@ -434,7 +434,7 @@ function Update:Window(text,logo,keybind)
     ScrollTab.Name = "ScrollTab"
     ScrollTab.Parent = Tab
     ScrollTab.Active = true
-    ScrollTab.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    ScrollTab.BackgroundColor3 = Color3.fromRGB(135, 206, 250)
     ScrollTab.BackgroundTransparency = 1.000
     ScrollTab.Size = UDim2.new(0, 133, 0, 203)
     ScrollTab.CanvasSize = UDim2.new(0, 0, 0, 0)
@@ -470,7 +470,7 @@ Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Page.BackgroundTransparency = 1.10
 Page.Position = UDim2.new(0.265426834, 0, 0.075000003, 0)
 Page.Size = UDim2.new(0, 400, 0, 400)
-Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
+Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(16436606764)
 
     local MainPage = Instance.new("Frame")
     MainPage.Name = "MainPage"
@@ -736,7 +736,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         NotificationTitle.ZIndex = 3
         NotificationTitle.Font = Enum.Font.GothamSemibold
         NotificationTitle.Text = "Notification"
-        NotificationTitle.TextColor3 = Color3.fromRGB(255, 0, 0)
+        NotificationTitle.TextColor3 = Color3.fromRGB(135, 206, 250)
         NotificationTitle.TextSize = 22.000
 
         Line.Name = "Line"
@@ -802,7 +802,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
 
         Button.Name = "Button"
         Button.Parent = MainFramePage
-        Button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        Button.BackgroundColor3 = Color3.fromRGB(135, 206, 250)
         Button.Size = UDim2.new(0, 387, 0, 31)
 
         UICorner.CornerRadius = UDim.new(0, 5)
@@ -919,7 +919,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         UIStroke.Name = "UIStroke"
         UIStroke.Parent = CheckFrame2
         UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        UIStroke.Color = Color3.fromRGB(255, 0, 0)
+        UIStroke.Color = Color3.fromRGB(135, 206, 250)
         UIStroke.LineJoinMode = Enum.LineJoinMode.Round
         UIStroke.Thickness = 1
         UIStroke.Transparency = 0
@@ -936,7 +936,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 5, 0, 6)
         ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-        ImageLabel.Image = "rbxassetid://15860672267"
+        ImageLabel.Image = "rbxassetid://16436649609"
         ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         Space.Name = "Space"
@@ -1032,7 +1032,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         UIStroke.Name = "UIStroke"
         UIStroke.Parent = Dropdown
         UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        UIStroke.Color = Color3.fromRGB(255, 0, 0)
+        UIStroke.Color = Color3.fromRGB(135, 206, 250)
         UIStroke.LineJoinMode = Enum.LineJoinMode.Round
         UIStroke.Thickness = 1
         UIStroke.Transparency = 0
@@ -1055,7 +1055,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         DropScroll.Name = "DropScroll"
         DropScroll.Parent = DropTitle
         DropScroll.Active = true
-        DropScroll.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        DropScroll.BackgroundColor3 = Color3.fromRGB(135, 206, 250)
         DropScroll.BackgroundTransparency = 1.000
         DropScroll.BorderSizePixel = 0
         DropScroll.Position = UDim2.new(0, 0, 0, 31)
@@ -1073,7 +1073,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
 
         DropButton.Name = "DropButton"
         DropButton.Parent = Dropdown
-        DropButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        DropButton.BackgroundColor3 = Color3.fromRGB(135, 206, 250)
         DropButton.BackgroundTransparency = 1.000
         DropButton.Size = UDim2.new(0, 385, 0, 31)
         DropButton.Font = Enum.Font.SourceSans
@@ -1257,7 +1257,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         -- Prop --
         SliderFrame.Name = slidertitle or "SliderFrame"
         SliderFrame.Parent = MainFramePage
-        SliderFrame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        SliderFrame.BackgroundColor3 = Color3.fromRGB(135, 206, 250)
         SliderFrame.BackgroundTransparency = 1.000
         SliderFrame.BorderSizePixel = 0
         SliderFrame.Size = UDim2.new(0, 387, 0, 60)
@@ -1273,7 +1273,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         UIStroke.Name = "UIStroke"
         UIStroke.Parent = SliderFrame_2
         UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        UIStroke.Color = Color3.fromRGB(255, 0, 0)
+        UIStroke.Color = Color3.fromRGB(135, 206, 250)
         UIStroke.LineJoinMode = Enum.LineJoinMode.Round
         UIStroke.Thickness = 1
         UIStroke.Transparency = 0
@@ -1290,7 +1290,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
         ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-        ImageLabel.Image = "rbxassetid://15860672267"
+        ImageLabel.Image = "rbxassetid://16436649609"
             
         Title.Parent = SliderFrame_2
         Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
@@ -1324,7 +1324,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
     
         SliderCount.Name = "SliderCount"
         SliderCount.Parent = SliderButton
-        SliderCount.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        SliderCount.BackgroundColor3 = Color3.fromRGB(135, 206, 250)
         SliderCount.BackgroundTransparency = 0.3
         SliderCount.BorderSizePixel = 0
         SliderCount.Position = UDim2.new(0,start,0,0)
@@ -1353,7 +1353,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         SliderStroke.Name = "SliderStroke"
         SliderStroke.Parent = BoxFrame
         SliderStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-        SliderStroke.Color = Color3.fromRGB(255, 0, 0)
+        SliderStroke.Color = Color3.fromRGB(135, 206, 250)
         SliderStroke.LineJoinMode = Enum.LineJoinMode.Round
         SliderStroke.Thickness = 1
         SliderStroke.Transparency = 0.5
@@ -1724,7 +1724,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         
         TextboxLabel.Name = "TextboxLabel"
         TextboxLabel.Parent = Textbox
-        TextboxLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        TextboxLabel.BackgroundColor3 = Color3.fromRGB(135, 206, 250)
         TextboxLabel.BackgroundTransparency = 1.000
         TextboxLabel.Position = UDim2.new(0, 15, 0, 0)
         TextboxLabel.Text = text
@@ -1754,7 +1754,7 @@ Page.Image = "http://www.roblox.com/asset/?id=" .. tostring(15860678315)
         RealTextbox.Size = UDim2.new(0, 100, 0, 24)
         RealTextbox.Font = Enum.Font.GothamSemibold
         RealTextbox.Text = ""
-        RealTextbox.TextColor3 = Color3.fromRGB(255, 0, 0)
+        RealTextbox.TextColor3 = Color3.fromRGB(135, 206, 250)
         RealTextbox.TextSize = 11.000
         RealTextbox.TextTransparency = 0
 
@@ -2805,14 +2805,14 @@ function UpdateFlowerChams()
 						name.TextYAlignment = 'Top'
 						name.BackgroundTransparency = 1
 						name.TextStrokeTransparency = 0.5
-						name.TextColor3 = Color3.fromRGB(255, 0, 0)
+						name.TextColor3 = Color3.fromRGB(135, 206, 250)
 						if v.Name == "Flower1" then 
 							name.Text = ("Blue Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
 							name.TextColor3 = Color3.fromRGB(0, 0, 255)
 						end
 						if v.Name == "Flower2" then
 							name.Text = ("Red Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
-							name.TextColor3 = Color3.fromRGB(255, 0, 0)
+							name.TextColor3 = Color3.fromRGB(135, 206, 250)
 						end
 					else
 						v['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
@@ -2845,7 +2845,7 @@ function UpdateRealFruitChams()
 					name.TextYAlignment = 'Top'
 					name.BackgroundTransparency = 1
 					name.TextStrokeTransparency = 0.5
-					name.TextColor3 = Color3.fromRGB(255, 0, 0)
+					name.TextColor3 = Color3.fromRGB(135, 206, 250)
 					name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' Distance')
 				else
 					v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..' '.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' Distance')
@@ -3098,14 +3098,14 @@ function UpdateFlowerChams()
 						name.TextYAlignment = 'Top'
 						name.BackgroundTransparency = 1
 						name.TextStrokeTransparency = 0.5
-						name.TextColor3 = Color3.fromRGB(255, 0, 0)
+						name.TextColor3 = Color3.fromRGB(135, 206, 250)
 						if v.Name == "Flower1" then 
 							name.Text = ("Blue Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
 							name.TextColor3 = Color3.fromRGB(0, 0, 255)
 						end
 						if v.Name == "Flower2" then
 							name.Text = ("Red Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
-							name.TextColor3 = Color3.fromRGB(255, 0, 0)
+							name.TextColor3 = Color3.fromRGB(135, 206, 250)
 						end
 					else
 						v['NameEsp'..Number].TextLabel.Text = (v.Name ..'   \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' Distance')
@@ -3138,7 +3138,7 @@ function UpdateRealFruitChams()
 					name.TextYAlignment = 'Top'
 					name.BackgroundTransparency = 1
 					name.TextStrokeTransparency = 0.5
-					name.TextColor3 = Color3.fromRGB(255, 0, 0)
+					name.TextColor3 = Color3.fromRGB(135, 206, 250)
 					name.Text = (v.Name ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' Distance')
 				else
 					v.Handle['NameEsp'..Number].TextLabel.Text = (v.Name ..' '.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Handle.Position).Magnitude/3) ..' Distance')
