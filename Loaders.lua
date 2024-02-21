@@ -1,11 +1,14 @@
 local validKeys = {
     ["valid"] = true,
+    ["l2kUT5ZFqsT45klrQ7Cj8Zk7BOrDGPaC"] = true,
     ["notvalid"] = false
 }
 
+local getkey = 'https://ez4short.com/keysystem1'
+
 
 local thescript = [[
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/charlesslim/vallHUB/main/vallh.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/pokelokbr/Dr.peste/main/sukunav13"))()
 ]]
 
 local gui = Instance.new("ScreenGui")
@@ -46,7 +49,7 @@ title.Font = Enum.Font.Ubuntu
 title.Text = "vallHub"
 title.TextSize = 24
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextScaled = true
+title.FontWeight = Enum.FontWeight.Bold
 
 local logo = Instance.new("ImageLabel")
 logo.Name = "Logo"
@@ -74,7 +77,7 @@ closeButton.MouseButton1Click:Connect(function()
     gui:Destroy()
 end)
 
-local keyTextBox = Instance.new("TextBox")
+local keyTextBox = Instance.new("Input Key Here")
 keyTextBox.Name = "KeyTextBox"
 keyTextBox.Parent = frame
 keyTextBox.Size = UDim2.new(0.7, 0, 0, 30)
@@ -111,15 +114,16 @@ local function createButton(name, position, text)
 end
 
 local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Confirm Key")
---local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.7, 0, 0, 0), "Buy KeyPrivate")
+local buyKeyButton = createButton("getKey", UDim2.new(0.7, 0, 0, 0), "Get Key")
 
---getKeyButton.MouseButton1Click:Connect(function()
---    game.StarterGui:SetCore("SendNotification", {
---        Title = "vall Hub",
---        Text = "URL Get Private Key Berhasil Di Salin",
- --       Duration = 4
---    })
---end)
+getKey.MouseButton1Click:Connect(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "vall Hub",
+        Text = "Link Key Di salin open di browser!!",
+       Duration = 6
+    })
+  setclipboard(getkey)
+end)
 
 loginButton.MouseButton1Click:Connect(function()
     local enteredKey = keyTextBox.Text
@@ -130,15 +134,15 @@ loginButton.MouseButton1Click:Connect(function()
             Title = "vall Hub",
             Text = "Key Valid...",
             Duration = 6
-         })
-                
+        })
+      
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
             Text = "Selamat Datang Cuy!",
             Duration = 6
 })
-        loadstring(thescript)()
-        gui:Destroy()
+        loadstring(thescript)()  -- Menjalankan skrip jika kunci valid
+        gui:Destroy()  -- Menghapus GUI setelah menjalankan skrip
     else
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
