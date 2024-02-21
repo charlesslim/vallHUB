@@ -114,9 +114,9 @@ local function createButton(name, position, text)
 end
 
 local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Confirm Key")
-local buyKeyButton = createButton("getKey", UDim2.new(0.7, 0, 0, 0), "Get Key")
+local getKeyButton = createButton("getKeyButton", UDim2.new(0.7, 0, 0, 0), "Get Key")
 
-getKey.MouseButton1Click:Connect(function()
+getKeyButton.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
         Title = "vall Hub",
         Text = "Link Key Di salin open di browser!!",
