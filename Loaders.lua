@@ -77,7 +77,7 @@ closeButton.MouseButton1Click:Connect(function()
     gui:Destroy()
 end)
 
-local keyTextBox = Instance.new("Input Key Here")
+local keyTextBox = Instance.new("TextBox")
 keyTextBox.Name = "KeyTextBox"
 keyTextBox.Parent = frame
 keyTextBox.Size = UDim2.new(0.7, 0, 0, 30)
