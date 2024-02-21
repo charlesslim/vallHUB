@@ -77,7 +77,7 @@ closeButton.MouseButton1Click:Connect(function()
     gui:Destroy()
 end)
 
-local keyTextBox = Instance.new("TextBox")
+local keyTextBox = Instance.new("TextBox")  -- Mengubah Input Key Here menjadi TextBox
 keyTextBox.Name = "KeyTextBox"
 keyTextBox.Parent = frame
 keyTextBox.Size = UDim2.new(0.7, 0, 0, 30)
@@ -89,18 +89,10 @@ keyTextBox.TextSize = 18
 keyTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 keyTextBox.BackgroundTransparency = 0.8
 
-local buttonContainer = Instance.new("Frame")
-buttonContainer.Name = "ButtonContainer"
-buttonContainer.Parent = frame
-buttonContainer.Size = UDim2.new(0.7, 0, 0, 30)
-buttonContainer.Position = UDim2.new(0.5, -buttonContainer.Size.X.Offset / 2, 0.95, -3)
-buttonContainer.AnchorPoint = Vector2.new(0.5, 1)
-buttonContainer.BackgroundTransparency = 1
-
 local function createButton(name, position, text)
     local button = Instance.new("TextButton")
     button.Name = name
-    button.Parent = buttonContainer
+    button.Parent = frame
     button.Size = UDim2.new(0.3, 0, 0, 30)
     button.Position = position
     button.Font = Enum.Font.Ubuntu
@@ -113,36 +105,36 @@ local function createButton(name, position, text)
     return button
 end
 
-local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Confirm Key")
-local getKeyButton = createButton("getKeyButton", UDim2.new(0.7, 0, 0, 0), "Get Key")
+local getKeyButton = createButton("getKeyButton", UDim2.new(0.7, 0, 0, 0), "Get Key")  -- Menambahkan tombol Get Key
 
 getKeyButton.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
         Title = "vall Hub",
-        Text = "Link Key Di salin open di browser!!",
-       Duration = 6
+        Text = "Link Key telah disalin! Buka browser untuk memasukkan key.",
+        Duration = 6
     })
-  setclipboard(getkey)
+    setclipboard(getkey)
 end)
+
+local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Confirm Key")
 
 loginButton.MouseButton1Click:Connect(function()
     local enteredKey = keyTextBox.Text
 
-    -- Memeriksa apakah kunci yang dimasukkan terdapat dalam daftar kunci yang valid
     if validKeys[enteredKey] then
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
             Text = "Key Valid...",
             Duration = 6
         })
-      
+
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
             Text = "Selamat Datang Cuy!",
             Duration = 6
-})
-        loadstring(thescript)()  -- Menjalankan skrip jika kunci valid
-        gui:Destroy()  -- Menghapus GUI setelah menjalankan skrip
+        })
+        loadstring(thescript)()
+        gui:Destroy()
     else
         game.StarterGui:SetCore("SendNotification", {
             Title = "vall Hub",
@@ -151,11 +143,3 @@ loginButton.MouseButton1Click:Connect(function()
         })
     end
 end)
-
---buyKeyButton.MouseButton1Click:Connect(function()
---    game.StarterGui:SetCore("SendNotification", {
---        Title = "vall Hub",
---        Text = "Gada Private Key Gak Di jual!!",
---        Duration = 4
---    })
---end)
