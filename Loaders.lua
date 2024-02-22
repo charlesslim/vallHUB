@@ -49,7 +49,8 @@ title.Font = Enum.Font.Ubuntu
 title.Text = "vallHub"
 title.TextSize = 24
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextStyle = Enum.TextStyle.Bold  -- Mengganti FontWeight dengan TextStyle
+title.FontWeight = Enum.FontWeight.Bold
+
 
 local logo = Instance.new("ImageLabel")
 logo.Name = "Logo"
