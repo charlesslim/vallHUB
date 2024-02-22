@@ -39,7 +39,7 @@ Title.Parent = Frame
 local Instructions = Instance.new("TextLabel")
 Instructions.Size = UDim2.new(1, 0, 0, 30)
 Instructions.Position = UDim2.new(0, 0, 0.2, 0)
-Instructions.Text = "Enter Key To Access The Script"
+Instructions.Text = "Masukan Key untuk akses ke Script!!!"
 Instructions.TextSize = 13
 Instructions.TextColor3 = Color3.fromRGB(150, 150, 150)
 Instructions.BackgroundTransparency = 1
@@ -86,11 +86,11 @@ CheckKeyCorner.CornerRadius = UDim.new(0, 5)
 CheckKeyCorner.Parent = CheckKey
 
 GetKey.MouseButton1Click:Connect(function()
-   setclipboard("Your Way How To Get The Key")
+   setclipboard("https://ez4short.com/keysystem")
 end)
 
 local function validateKey(key)
-    return key == "Key" -- Replace this with your key
+    return key == "U9JbpYG7xY5FzumP3Ani1LXvT6CWz89J" -- Replace this with your key
 end
 
 local attempts = 0 -- Menghitung jumlah percobaan yang gagal
