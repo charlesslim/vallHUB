@@ -4,7 +4,7 @@ local validKeys = {
     ["notvalid"] = false
 }
 
-local getkey = 'https://ez4short.com/keysystem1'
+local keylinks = 'https://ez4short.com/keysystem1'
 
 
 local thescript = [[
@@ -113,7 +113,7 @@ getKeyButton.MouseButton1Click:Connect(function()
         Text = "Link Key telah disalin! Buka browser untuk memasukkan key.",
         Duration = 6
     })
-    setclipboard(getkey)
+    setclipboard(keylinks)
 end)
 
 local loginButton = createButton("LoginButton", UDim2.new(0.35, 0, 0, 0), "Confirm Key")
