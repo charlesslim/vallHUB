@@ -49,7 +49,7 @@ local TextBox = Instance.new("TextBox")
 TextBox.Size = UDim2.new(0.8, 0, 0.2, 0)
 TextBox.Position = UDim2.new(0.1, 0, 0.4, 0)
 TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextBox.PlaceholderText = "Enter Key..."
+TextBox.PlaceholderText = "Masukan Key..."
 TextBox.Text = ""
 TextBox.TextSize = 18
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -93,22 +93,37 @@ local function validateKey(key)
     return key == "Key" -- Replace this with your key
 end
 
+local attempts = 0 -- Menghitung jumlah percobaan yang gagal
+
 CheckKey.MouseButton1Click:Connect(function()
     local enteredKey = TextBox.Text
     if validateKey(enteredKey) then
-        TextBox.PlaceholderText = "Correct Key!"
+        TextBox.PlaceholderText = "Key Valid!"
         TextBox.Text = ""
         wait(1)
         ScreenGui:Destroy()
 
--- Put Your Script Here
-loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+        -- Menambahkan notifikasi saat kunci valid dimasukkan
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Login success!!",
+            Text = "Nikmati SCnya!!",
+            Duration = 5
+        })
 
+        -- Menjalankan skrip setelah kunci valid dimasukkan
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/charlesslim/vallHUB/main/vallh.lua'))()
     else
-        TextBox.PlaceholderText = "Invalid key. Try again."
+        TextBox.PlaceholderText = "Key salah. Coba Lagi."
         TextBox.Text = ""
         wait(1)
-        TextBox.PlaceholderText = "Enter Key..."
+        TextBox.PlaceholderText = "Masukan Key..."
         TextBox.Text = ""
+        
+        -- Menghitung jumlah percobaan yang gagal
+        attempts = attempts + 1
+        if attempts >= 5 then
+            -- Ter kick dari game setelah lima kali kesalahan
+            game.Players.LocalPlayer:Kick("Jangan Coba2 Ngarang Key TOLOL!!!")
+        end
     end
 end)
