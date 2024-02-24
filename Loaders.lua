@@ -86,7 +86,7 @@ CheckKeyCorner.CornerRadius = UDim.new(0, 5)
 CheckKeyCorner.Parent = CheckKey
 
 GetKey.MouseButton1Click:Connect(function()
-   setclipboard("https://ez4short.com/csatu")
+   setclipboard("https://ez4short.com/pBV8H")
 end)
 
 local function validateKey(key)
