@@ -90,7 +90,7 @@ GetKey.MouseButton1Click:Connect(function()
 end)
 
 local function validateKey(key)
-    return key == "rXK9mpyPls0dLoZHQjfQGfIIKPcGkVXz" -- Replace this with your key
+    return key == "Yw1he7lkUEZINeOXKJsbhWUJkcj1LFR8" -- Replace this with your key
 end
 
 local attempts = 0 -- Menghitung jumlah percobaan yang gagal
