@@ -90,7 +90,7 @@ GetKey.MouseButton1Click:Connect(function()
 end)
 
 local function validateKey(key)
-    return key == "Yw1he7lkUEZINeOXKJsbhWUJkcj1LFR8" -- Replace this with your key
+    return key == "key" -- Replace this with your key
 end
 
 local attempts = 0 -- Menghitung jumlah percobaan yang gagal
@@ -107,7 +107,7 @@ CheckKey.MouseButton1Click:Connect(function()
         game.StarterGui:SetCore("SendNotification", {
             Title = "Login success!!",
             Text = "Nikmati SCnya!!",
-            Duration = 5
+            Duration = 8
         })
 
         -- Menjalankan skrip setelah kunci valid dimasukkan
