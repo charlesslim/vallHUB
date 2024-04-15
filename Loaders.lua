@@ -86,8 +86,23 @@ CheckKeyCorner.CornerRadius = UDim.new(0, 5)
 CheckKeyCorner.Parent = CheckKey
 
 GetKey.MouseButton1Click:Connect(function()
-   setclipboard("https://ez4short.com/pBV8H")
+    setclipboard("key")
+    
+    -- Menampilkan notifikasi key berhasil di-copy
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "<> vallHUB <>",
+        Text = "Key Copy success",
+        Duration = 8
+    })
+    
+    -- Menampilkan notifikasi "Support dong Jan pake doang"
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "<> vallHUB <>",
+        Text = "Jan Lupa Beli Akun gw :>",
+        Duration = 8
+    })
 end)
+
 
 local function validateKey(key)
     return key == "key" -- Replace this with your key
